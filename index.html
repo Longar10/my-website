@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Cars</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://via.placeholder.com/1920x1080.png?text=Background+Image');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            height: 100vh;
+            overflow: auto;
+        }
+        header {
+            text-align: center;
+            background: rgba(0, 123, 255, 0.8);
+            color: white;
+            padding: 20px 0;
+            position: relative;
+        }
+        .logo {
+            max-width: 150px;
+            margin: 0 auto;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .car-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .car-item {
+            width: calc(33% - 20px);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://via.placeholder.com/150?text=Logo" alt="Car Logo" class="logo">
+    <h1>Welcome to the World of Cars!</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#types">Types of Cars</a>
+        <a href="#history">History</a>
+        <a href="#gallery">Car Gallery</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Cars</h2>
+    <p>Cars are a popular mode of transportation that have evolved significantly over the years. From early steam-powered vehicles to today's advanced electric cars, the automobile industry is constantly innovating.</p>
+    <button class="button" onclick="showCarFact()">Did You Know?</button>
+</section>
+
+<section id="types">
+    <h2>Types of Cars</h2>
+    <ul>
+        <li><strong>Sedans:</strong> Comfortable and suitable for daily use.</li>
+        <li><strong>SUVs:</strong> Spacious and great for families and off-road driving.</li>
+        <li><strong>Hatchbacks:</strong> Compact and versatile, perfect for city driving.</li>
+        <li><strong>Sports Cars:</strong> High performance and designed for speed.</li>
+        <li><strong>Electric Cars:</strong> Eco-friendly and powered by electricity.</li>
+    </ul>
+</section>
+
+<section id="history">
+    <h2>History of Cars</h2>
+    <p>The first automobile was built in 1885 by Karl Benz. Since then, the automotive industry has transformed with innovations such as assembly lines, safety features, and alternative fuel vehicles.</p>
+</section>
+
+<section id="gallery">
+    <h2>Car Gallery</h2>
+    <div class="car-gallery">
+        <div class="car-item">
+            <img src="https://via.placeholder.com/300x200?text=Car+1" alt="Car 1">
+            <button class="button" onclick="orderCar('Car 1')">Order Car 1</button>
+        </div>
+        <div class="car-item">
+          
